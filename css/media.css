@@ -1,0 +1,498 @@
+
+@media (max-width: 768px) {
+    body {
+        max-width: 100vw;
+        min-width: 375px;
+    }
+
+    .container {
+        width: 335px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-background-list {
+        min-height: 776px;
+    }
+
+    .hero-background-layer {
+        background-position: bottom;
+    }
+
+    .layercircle {
+        background-size: 100%;
+        left: 53%;
+        bottom: 19%;
+        width: 455px;
+        height: 455px;
+    }
+
+    .layer-text {
+        background-size: 100%;
+        left: 53%;
+        bottom: 20%;
+        width: 445px;
+        height: 445px;
+    }
+
+    .layerking  {
+        background-size: 20%;
+        left: 50%;
+        bottom: 39%;
+        width: 600px;
+        height: 470px;
+        transform: rotate(7.4deg);
+        background-image: url(../img/king-small.png);
+    }
+    
+    .layerqween {
+        background-size: 57%;
+        left: 50%;
+        bottom: 22%;
+        width: 224px;
+        height: 470px;
+        background-image: url(../img/qween-small.png);
+    }
+    
+    .layer-mask {
+        background-size: cover;
+        background-position: top;
+    }
+
+    .layerhorse {
+        background-size: 39%;
+        left: 50%;
+        bottom: 0%;
+        width: 503px;
+        height: 445px;
+        background-image: url(../img/horse-small.png);
+    }
+
+    .layerpawn {
+        display: none;
+    }
+
+    .hero-content {
+        padding-top: 18px;
+        width: 335px;
+        margin-left: 21px;
+    }
+
+    .logo-container {
+        width: 63.8%;
+        margin-bottom: 38px;
+    }
+
+    .hero-title-container {
+        width: 335px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        line-height: 39.6px;
+    }
+
+    .hero-title__capital-text {
+        margin-left: 8px;
+    }
+
+    .hero-descr {
+        margin-bottom: 32px;
+        text-align: left;
+    }
+
+    .hero-descr br {
+        display: block;
+    }
+
+    .hero-btn-container {
+        flex-direction: column;
+    }
+
+    .btn-L, .btn-R {
+        width: 335px;
+        height: 47px;
+        white-space: nowrap;
+        text-align: center;
+        padding: 0 40px;
+    }
+
+    .btn-L {
+        margin-bottom: 14px;
+    }
+
+    .btn-R {
+        border: none;
+        background-color: #fff;
+    }
+
+    .btn-R br {
+        display: none;
+    }
+
+    .runtext-container {
+        height: 38px;
+    }
+
+    .runtext-list {
+        animation: marquee 20s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(500px);
+        }
+
+        100% {
+            transform: translateX(-1658px);
+        }
+    }
+
+    .block-item {
+        font-size: 16px;
+        line-height: 17.6px;
+    }
+    
+    .runtext-top {
+        margin-bottom: 47px;
+    }
+
+    .tournament-content {
+        flex-wrap: wrap;
+        margin-bottom: 34px;
+    }
+
+    .tournament-title,.tournament-info-title {
+        display: contents;
+        font-size: 28px;
+        line-height: 37.8px;
+        padding-top: 0px;
+        margin-bottom: 24px;
+    }
+
+    .tournament-title__mobile {
+        margin-bottom: 24px;
+    }
+
+    .tournament-img-container {
+        margin-bottom: 25px;
+        order: 1;
+    }
+
+    .tournament-title__offset-element {
+        order: 2;
+    }
+
+    .tournament-info {
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+
+    .tournament-info__background-list {
+        min-width: 375px;
+        left: -20px;
+        margin-bottom: 427px;
+    }
+    
+    .tournament-img__thinker {
+        min-height: 400px;
+        background-size: 100%;
+    }
+
+    .tournament-img__thinker-mask {
+        min-height: 400px;
+    }
+
+    .tournament-title br,.tournament-info-title br {
+        display: none;
+    }
+
+    .tournament-info-title {
+        display: block;
+        margin-bottom: 44px;
+    }
+
+    .tournament-info__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin-bottom: 42px;
+        width: 100%;
+    }
+
+    .tournament-list-title:not(:nth-child(7)) {
+        padding-bottom: 12px;
+        flex: 1 0 100%;
+        border-bottom: none;
+        border-right: none;
+    }
+
+    .tournament-list-title:nth-child(7) {
+        padding-right: 13px;
+        padding-bottom: 14px;
+        border-right: none;
+        flex: 0 1 10%;
+    }
+
+    .tournament-list-info:nth-child(8){
+        flex: 0 1 54%;
+        margin-right: 0px;
+        border-bottom: 2px solid #D0D0D0;
+    }
+
+    .tournament-list-info {
+        padding-top: 0px;
+        padding-bottom: 14px;
+        padding-left: 0px;
+        margin-right: 20px;
+        flex: 1 0 100%;
+    }
+
+    .tournament-list-questions,.stages-descr {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .stages {
+    margin-bottom: 120px;
+    }
+
+    .stages-title-container {
+        margin-bottom: 148px;
+    }
+
+    .stages-title {
+        margin-bottom: 12px;
+        font-size: 36px;
+        line-height: 39.6px;
+    }
+
+    .stages-descr {
+        position: initial; 
+        width: 100%;
+    }
+
+    .stages-wrapper {
+        overflow: hidden;
+    }
+
+    .stages-img {
+        object-fit: contain;
+    }
+
+    .stages-items {
+        margin-bottom: 28px;
+        height: 300px;
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 0;
+        transition: transform .8s;
+    }
+
+    .stages-item {
+        flex: 1 0;
+        padding: 64px 20px 0px 72px;
+        width: 243px;
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .stages-item:nth-child(2) {
+        padding-top: 0px;
+    }
+
+    .stages-item:nth-child(3) {
+        padding: 64px 20px 0px 72px;
+    }
+
+    .stages-item:nth-child(4) {
+        padding-bottom: 28px;
+        flex: 0 1;
+    }
+
+    .stages-item:nth-child(5) {
+        padding-top: 0px;
+    }
+
+    .stages-item:nth-child(6) br {
+        display: block;
+    }
+
+    .stages-item:nth-child(7) {
+        padding-right: 20px;
+    }
+
+    .stages-item-7__wrap br {
+        display: block;
+    }
+
+    .stages-picture {
+        width: 335px;
+        height: 182px;
+        top: 192px;
+        left: 32px;
+        transform: rotate(-3.5deg);
+    }
+
+    .stages-arrows {
+        display: flex;
+        width: 178px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .stages-dots {
+        padding-top: 5px;
+    }
+
+    .left, .right, .left-stage, .right-stage {
+        width: 36px;
+        height: 36px;
+        line-height: 10px;
+    }
+
+    .dot {
+        margin: 0 6px 10px 0;
+        width: 10px;
+        height: 10px;
+        background-color: #d9d9d9;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .dot:last-child {
+        margin: 0;
+    }
+
+    .dot.active {
+        background-color: #313131;
+    }
+
+    #members {
+        padding-bottom: 100px;
+    }
+
+    .members-content {
+        flex-direction: column;
+    }
+
+    .members-title-container {
+        margin-bottom: 43px;
+    }
+
+    .members-title {
+        width: 336px;
+        font-size: 36px;
+        line-height: 39.6px;
+    }
+
+    .slider-container {
+        width: 100%;
+    }
+
+    .slides {
+        margin-bottom: 40px;
+    }
+
+    .slide {
+        flex: 1 0 100%;
+    }
+
+    .navigation {
+        position: initial;
+        justify-content: center;
+    }
+
+    .slider-svg {
+        width: 10px;
+        height: 18px;
+    }
+
+    .left {
+        margin-right: 15px;
+    }
+
+    #total-slides {
+        margin-right: 15px;
+    }
+
+    .members-avatar {
+        object-fit: contain;
+        max-width: 244px;
+    }
+
+    .footer {
+        padding: 0px;
+    }
+    
+    .footer-container {
+        background-color: #E9DED4;
+    }
+
+    .footer-descr {
+        padding-top: 42px;
+        padding-bottom: 60px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.2px;
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero-background-list {
+        min-height: 776px;
+    }
+
+    .hero-background-layer {
+        background-size: 281%;
+        background-position: 72.5% bottom;
+    }
+
+    .layercircle {
+        background-size: 65%;
+        left: -22.2%;
+        bottom: 9%;
+    }
+
+    .layer-text {
+        background-size: 100%;
+        left: 9.00%;
+        bottom: 9.2%;
+        width: 292px;
+        height: 292px;
+    }
+
+    .layerking  {
+        background-size: 11%;
+        left: -34%;
+        bottom: 22.5%;
+    }
+    
+    .layerqween {
+        background-size: 26%;
+        left: -15%;
+        bottom: 14.8%;
+    }
+    
+    .layer-mask {
+        background-size: cover;
+        background-position: top;
+    }
+
+    .layerhorse {
+        background-size: 20%;
+        left: -40%;
+        bottom: 0%;
+        width: 509px;
+        height: 496px;
+    }
+
+    .layerpawn {
+        display: none;
+    }
+
+}

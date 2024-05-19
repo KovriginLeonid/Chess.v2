@@ -1,0 +1,654 @@
+html {
+    box-sizing: border-box;
+    margin: 0 0;
+    overflow-x: hidden;
+}
+
+/* *,
+*::before,
+*::after {
+    box-sizing: inherit;
+} */
+
+p {
+    margin-bottom: 12px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 1366px;
+    overflow-x: hidden;
+    font-family: 'Golos Text';
+    color: #313131;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+@keyframes rotateZ {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes runtext {
+    0% {
+        transform: translateX(2335px);
+    }
+
+    100% {
+        transform: translateX(-2335px);
+    }
+
+}
+
+.common-text {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1225px;
+    margin: 0 auto;
+}
+
+p, .section-title {
+    margin: 0;
+}
+
+.section-title {
+    text-transform: uppercase;
+}
+
+/*--------Hero--------*/
+
+.logo-container {
+    margin-bottom: 59px;
+}
+
+.section-hero{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    min-height: 700px;
+}
+
+.hero-block {
+    position: relative;
+}
+
+.hero-background-list {
+    position: relative;
+    overflow: hidden;
+    min-height: 700px;
+    background-color: #E9DED4;
+}
+
+.hero-background-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.layercircle {
+    z-index: 1;
+    background-image: url(../img/fullcircle.png);
+    left: 49.5%;
+    bottom: 11.5%;
+    width: 660px;
+    height: 660px;
+}
+
+.layerking  {
+    z-index: 1;
+    background-image: url(../img/king.png);
+}
+
+.layerqween {
+    z-index: 1;
+    background-image: url(../img/qween.png);
+}
+
+.layer-text {
+    z-index: 2;
+    left: 49.5%;
+    bottom: 11.5%;
+    width: 661px;
+    height: 661px;
+    mix-blend-mode: overlay;
+    animation: rotateZ 30s linear infinite;
+    background-image: url(../img/Group2big.png);
+}
+
+
+.layercity {
+    z-index: 3;
+    background-image: url(../img/1920-layer2restored.png);
+}
+
+.layer-mask {
+    z-index: 4;
+    mix-blend-mode: color-burn;
+    background-image: url(../img/mask.png);
+}
+
+.layerhorse {
+    z-index: 5;
+    background-image: url(../img/horse.png);
+}
+
+.layerpawn {
+    z-index: 5;
+    background-image: url(../img/pawn.png);
+}
+
+
+.hero-content-container {
+    position: absolute;
+    top: 0px;
+    z-index: 6;
+    width: 100%;
+}
+
+.hero-content {
+    padding-top: 26px;
+    display: block;
+    width: 1225px;
+    margin: 0 auto;
+}
+
+.hero-title-container {
+    width: 542px;
+}
+
+.hero-title, .tournament-title, .stages-title, .members-title,.tournament-info-title {
+    font-family: 'Merriweather';
+    font-weight: 400;
+    color: #313131;
+}
+
+.hero-title {
+    margin-bottom: 24px;
+    font-size: 60px;
+    line-height: 66px;
+    text-transform: uppercase;
+}
+
+.hero-title__capital-text {
+    display: block;
+    text-align: center;
+}
+
+.hero-title__globe-text {
+    display: block;
+    text-align: right;
+}
+
+.hero-descr {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23.4px;
+}
+
+.hero-descr br {
+    display: none;
+}
+
+.hero-btn-container {
+    margin-bottom: 125px;
+}
+
+.btn-L, .btn-R {
+    width: 263px;
+    height: 72px;
+    padding: 0 49px;
+    border-radius: 66px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+}
+
+.btn-L {
+    margin-right: 16px;
+    color: white;
+    background-color: #1F1F1F;
+}
+
+.btn-L:hover {
+    background-color: #FBCE51;
+    color: #313131;
+}
+
+.btn-R {
+    border: #313131 solid 2px;
+    color: #313131;
+}
+
+.btn-R:hover {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+}
+
+/*--------runtext--------*/
+
+.runtext-container {
+    overflow: hidden;
+    height: 60px;
+    background-color: #F54932;
+    color: #FFFFFF;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.runtext-list {
+    animation: runtext 15s linear infinite;
+    justify-content: space-between;
+}
+
+.block-item {
+    margin-left: 12px;
+    font-family: 'Merriweather';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24.2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-grow: 1;
+}
+
+.runtext-top {
+    margin-bottom: 81px;
+}
+
+/*--------tournament--------*/
+
+.tournament-content {
+    margin-bottom: 37px;
+    flex-wrap: nowrap;
+}
+
+.tournament-img-container {
+    display: flex;
+    flex: 1 0 32.2%;
+}
+
+.tournament-info__background-list {
+    position: relative;
+    left: -22px;
+    width: 100%;
+}
+
+
+.tournament-img__thinker {
+    position: absolute;
+    width: 100%;
+    min-height: 568px;
+    z-index: 1;
+    background-image: url(../img/Thinker.png);
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+.tournament-img__thinker-mask {
+    position: absolute;
+    width: 100%;
+    min-height: 568px;
+    mix-blend-mode: color-burn;
+    z-index: 1;
+    background-image: url(../img/mask.png);
+    background-repeat: no-repeat;
+}
+
+.tournament-title,.tournament-info-title {
+    padding-top: 27px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48.6px;
+}
+
+
+
+.tournament-title b,.tournament-info-title b {
+    font-weight: 700;
+    color: #F54932;
+}
+
+.tournament-info {
+    margin-bottom: 200px;
+}
+
+
+.tournament-info__list-container {
+    flex-direction: column;
+}
+
+.tournament-info-title {
+    margin-right: 0px;
+    margin-bottom: 60px;
+}
+
+.tournament-info__list {
+    display: grid;
+    grid-template-columns: 0.76fr 1fr;
+    grid-gap: 0px;
+    grid-auto-rows: min-content;
+    margin-bottom: 48px;
+    width: 704px;
+}
+
+.tournament-list-title,.tournament-list-info {
+    padding: 16px 0px 14px 0px;
+    border-bottom: 2px solid #D0D0D0;
+    white-space: nowrap;
+}
+
+.tournament-list-info {
+    padding-left: 16px;
+    font-weight: 600;
+}
+
+.tournament-list-title {
+    padding-right: 16px;
+    opacity: 70%;
+    border-right: 2px solid #D0D0D0;
+}
+
+.tournament-list-title:first-child,.tournament-list-info:nth-child(2) {
+    padding-top: 0px;
+}
+
+.tournament-list-title:nth-child(9),.tournament-list-info:last-child {
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+
+.tournament-list-info__red-line {
+    text-decoration:line-through red;
+}
+
+.tournament-list-questions {
+    color: #3057A2;
+}
+
+/*--------stages--------*/
+
+.stages {
+    margin-bottom: 200px;
+}
+
+.stages-container {
+    position: relative;
+}
+
+.stages-title-container {
+    position: relative;
+    margin-bottom: 54px;
+    max-width: 806px;
+}
+
+.stages-title {
+    font-size: 54px;
+    line-height: 64.8px;
+    text-transform: uppercase;
+}
+
+.stages-descr {
+    position: absolute;
+    bottom: 10px;
+    left: 38%;
+    color: #3057A2;
+    width: 280px;
+}
+
+.stages-items {
+    display: grid;
+    grid-template-areas: "stroy open selhos""strohouse garaj selhos""radio aero aero";
+    gap: 20px;
+    counter-reset: stages;
+    
+}
+
+.stages-item {
+    position: relative;
+    padding: 20px 20px 20px 72px;
+    max-width: 302px;
+    background-image: url(../img/copper+mask-80.png) ;
+    font-weight: 500;
+    background-color: white;
+}
+
+.stages-item:before {
+    width: 36px;
+    max-height: 36px;
+    padding: 6px 0;
+    position: absolute;
+    left: 20px;
+    content: counter(stages);
+    counter-increment: stages;
+    font-weight: 600;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.stages-item:nth-child(1) {
+    grid-area: stroy;
+}
+
+.stages-item:nth-child(2) {
+    grid-area: open;
+}
+
+.stages-item:nth-child(3) {
+    grid-area: selhos;
+    padding: 20px 20px 80px 72px;
+}
+
+.stages-item:nth-child(4) {
+    grid-area: strohouse;
+}
+
+.stages-item:nth-child(5) {
+    grid-area: garaj;
+}
+
+.stages-item:nth-child(6) {
+    grid-area: radio;
+}
+
+.stages-item:nth-child(6) br {
+    display: none;
+}
+
+.stages-item:nth-child(7) {
+    grid-area: aero;
+    max-width: 446px;
+    padding-right: 290px;
+}
+
+.stages-item-7__wrap br {
+    display: none;
+}
+
+.stages-picture {
+    position: absolute;
+    top: 60%;
+    left: 72%;
+    width: 100%;
+}
+
+.stages-img {
+    object-fit: none;
+}
+
+.stages-arrows {
+    display: none;
+}
+
+/**/
+
+#members {
+    padding-bottom: 140px;
+}
+
+.members-content {
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.members-title-container {
+    margin-bottom: 60px;
+}
+
+.members-title {
+    font-size: 54px;
+    line-height: 64.8px;
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+    overflow-x: clip;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in;
+    align-items: center;
+}
+
+
+.slide {
+    flex: 0 0 33.33%;
+    max-width: 394px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.slide:not(:last-child) {
+    padding-right: 20px;
+}
+
+.navigation {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    display: flex;
+    align-items: center
+}
+
+
+.left, .right, .left-stage, .right-stage {
+    width: 44px;
+    height: 44px;
+    background-color: #313131;
+    border-radius: 40px;
+}
+
+.left:hover, .right:hover, .left-stage:hover, .right-stage:hover {
+    background-color: #FBCE51;
+}
+
+#total-slides {
+    margin-right: 20px;
+    opacity: 60%;
+}
+
+.slides-num {
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+/*слайды*/
+
+
+.left {
+    margin-right: 17px;
+}
+
+.members-avatar {
+    object-fit: none;
+    margin-bottom: 28px;
+}
+
+.members-name {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #313131;
+}
+
+.members-descr {
+    margin-bottom: 20px;
+    color: #313131;
+    opacity: 0.6;
+}
+
+.members-btn {
+    width: 113px;
+    height: 35px;
+    border: 1px solid #3057A2;
+    border-radius: 62px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #3057A2;
+}
+
+.members-btn:hover {
+    color: #FFFFFF;
+    background-color: #3057A2;
+}
+
+.footer {
+    padding: 40px 72px 72px;
+    background-color: #E9DED4
+}
+
+.footer-descr {
+    font-size: 16px;
+    line-height: 19.2px;
+}
