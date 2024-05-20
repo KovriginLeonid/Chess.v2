@@ -91,7 +91,7 @@ parseInt
 
 
     const checkwidth = () => {
-        if (document.documentElement.clientWidth >= 768) { 
+        if (document.documentElement.clientWidth >= 769) { 
             totalSlides = document.querySelectorAll('.slide').length -=2;
             totalSlidesElement.textContent = '/'+ (totalSlides+2);
         } else {
@@ -105,7 +105,7 @@ parseInt
         const slidesContainer = document.querySelector('.slides');
         const translateValue = -(index - 1) * memberwidth +'px';
         slidesContainer.style.transform = 'translateX(' + translateValue + ')';
-        if (document.documentElement.clientWidth >= 768) { 
+        if (document.documentElement.clientWidth >= 769) { 
             currentSlideElement.textContent = index + 2;
         } else {
             currentSlideElement.textContent = index;
