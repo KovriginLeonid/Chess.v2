@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const stagesWrapper = document.querySelector('.stages-wrapper');
-    const stagesItems = stagesWrapper.querySelector('.stages-items');
-    const stages = Array.from(stagesWrapper.querySelectorAll('.stages-item')).slice(0, 5);
-    const arrowsLeft = stagesWrapper.querySelector('.stages-arrows-left');
-    const arrowsRight = stagesWrapper.querySelector('.stages-arrows-right');
-    const dotsContainer = stagesWrapper.querySelector('.stages-dots');
+    const stagesWrapper = document.querySelector('.stages__development');
+    const stagesItems = stagesWrapper.querySelector('.development__list');
+    const stages = Array.from(stagesWrapper.querySelectorAll('.development__item')).slice(0, 5);
+    const arrowsLeft = stagesWrapper.querySelector('.stages__left-arrow');
+    const arrowsRight = stagesWrapper.querySelector('.stages__right-arrow');
+    const dotsContainer = stagesWrapper.querySelector('.slider-navigation__dots');
     
       //Отключение стрелок на крайних слайдах
     const updateArrows = () => {
@@ -78,34 +78,33 @@ document.addEventListener('DOMContentLoaded', () => {
     // Начальное обновление позиции, чтобы первый слайд был виден
     updateSlidePosition();
     });
-parseInt
 
     let currentSlide = 0;
-    let totalSlides = document.querySelectorAll('.slide');
+    let totalSlides = document.querySelectorAll('.members-slider__item');
     let currentSlideElement = document.getElementById('current-slide');
     const totalSlidesElement = document.getElementById('total-slides');
-    const prevButton = document.querySelector('.left');
-    const nextButton = document.querySelector('.right');
+    const prevButton = document.querySelector('.slider-navigation__left-arrow');
+    const nextButton = document.querySelector('.slider-navigation__right-arrow');
     const member = document.getElementById('member');
-    const memberwidth = member.offsetWidth;
+    const memberWidth = member.offsetWidth;
 
 
-    const checkwidth = () => {
-        if (document.documentElement.clientWidth >= 769) { 
-            totalSlides = document.querySelectorAll('.slide').length -=2;
+    const checkWidth = () => {
+        if (document.documentElement.clientWidth > 768) { 
+            totalSlides = document.querySelectorAll('.members-slider__item').length -=2;
             totalSlidesElement.textContent = '/'+ (totalSlides+2);
         } else {
-            totalSlides = document.querySelectorAll('.slide').length;
+            totalSlides = document.querySelectorAll('.members-slider__item').length;
             totalSlidesElement.textContent = '/'+ (totalSlides);
         }
     };
-    checkwidth();
+    checkWidth();
 
     function showSlide(index) {
-        const slidesContainer = document.querySelector('.slides');
-        const translateValue = -(index - 1) * memberwidth +'px';
+        const slidesContainer = document.querySelector('.members-slider__list');
+        const translateValue = -(index - 1) * memberWidth +'px';
         slidesContainer.style.transform = 'translateX(' + translateValue + ')';
-        if (document.documentElement.clientWidth >= 769) { 
+        if (document.documentElement.clientWidth > 768) { 
             currentSlideElement.textContent = index + 2;
         } else {
             currentSlideElement.textContent = index;
